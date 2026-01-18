@@ -10,7 +10,7 @@ main {
     width: 100%;
     max-width: 800px;
     margin: 0 auto 2rem auto;
-    padding: 0 2rem 2rem 2rem;
+    padding: 0 2rem 0 2rem;
     background-color: white;
     border: 1px solid black;
     box-shadow: 0 0 0.5rem 0 black;
@@ -52,6 +52,15 @@ p {
     display: block;
 }
 
+a {
+    color: inherit;
+    text-decoration:inherit;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
 .year-marker {
     float: right;
 }
@@ -85,6 +94,27 @@ p {
 
 #skills ul ul li {
     display: inline;
+}
+
+footer {
+    transition: color 0.2s;
+    transition: font-size 0.2s;
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem;
+    bottom: 1rem;
+    font-family: monospace;
+    color: rgb(126, 126, 126);
+    position:relative;
+    bottom:1rem;
+}
+
+footer:hover,
+footer:focus {
+    transition: all 0.2s;
+    font-size: 1rem;
+    color: black;
 }
 
 @media only screen and (max-width: 700px) {
